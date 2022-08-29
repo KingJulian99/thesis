@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vern's Randomizer</title>
+        <link rel="stylesheet" href="{% static 'output.css' %}">
+        <script src="{% static 'main.js' %}"></script>
+    </head>
+    <body class="bg-amber-100">
+
+        <div class="absolute w-full">
+
+            <svg viewBox="0 25 500 500">
+                <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"/>
+                <text class="text-lg tracking-wide" text-anchor="middle">
+                  <textPath startOffset="50%"; class="curved_title" xlink:href="#curve">
+                    Creative Writing
+                  </textPath>
+                </text>
+              </svg>
+
+        </div>
+
+        <div class="absolute w-full">
+
+            <svg viewBox="0 0 500 500">
+                <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"/>
+                <text class="text-lg" text-anchor="middle">
+                  <textPath startOffset="50%"; class="curved_title" xlink:href="#curve">
+                    Randomizer
+                  </textPath>
+                </text>
+              </svg>
+
+        </div>
+
+        <div>
+            <br>
+        </div>
+
+        <div class="absolute mt-[140px] pb-10 w-full h-full">
+            <h3 class="text-center">By Veronique Folscher</h3>
+
+            <!--Buttons-->
+            <div class="flex flex-row justify-center mt-20 gap-5">
+
+                <!--Music-->
+                <div id="music" class="choice_button bg-amber-300 cursor-pointer mt-2 hover:mt-0 w-60 h-60 hover:w-64 hover:h-64 transition-all duration-500">
+                  <img class="w-full" src="{% static 'images/music_icon.svg' %}">
+                  <div id="music_text" class="z-10 opacity-0 hover:opacity-100 transition-all duration-500 absolute left-0 top-0 w-full h-full flex flex-row justify-center items-center">
+                    <h1 class="text-5xl">Music</h1>
+                  </div>
+                </div>
+
+                <!--Objects-->
+                <div id="objects" class="choice_button bg-amber-300 cursor-pointer mt-2 hover:mt-0 w-60 h-60 hover:w-64 hover:h-64 transition-all duration-500">
+                  <img class="w-full" src="{% static 'images/objects_icon.svg' %}">
+                  <div id="music_text" class="z-10 opacity-0 hover:opacity-100 transition-all duration-500 absolute left-0 top-0 w-full h-full flex flex-row justify-center items-center">
+                    <h1 class="text-5xl">Objects</h1>
+                  </div>
+                </div>
+
+                <!--Art-->
+                <div id="art" class="choice_button bg-amber-300 cursor-pointer mt-2 hover:mt-0 w-60 h-60 hover:w-64 hover:h-64 transition-all duration-500">
+                  <img class="w-full" src="{% static 'images/art_icon.svg' %}">
+                  <div id="music_text" class="z-10 opacity-0 hover:opacity-100 transition-all duration-500 absolute left-0 top-0 w-full h-full flex flex-row justify-center items-center">
+                    <h1 class="text-5xl">Art</h1>
+                  </div>
+                </div>
+
+                <!--Poems-->
+                <div id="poems" class="choice_button bg-amber-300 cursor-pointer mt-2 hover:mt-0 w-60 h-60 hover:w-64 hover:h-64 transition-all duration-500">
+                  <img class="w-full" src="{% static 'images/poem_icon.svg' %}">
+                  <div id="music_text" class="z-10 opacity-0 hover:opacity-100 transition-all duration-500 absolute left-0 top-0 w-full h-full flex flex-row justify-center items-center">
+                    <h1 class="text-5xl">Poems</h1>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="h-28">
+                  
+            </div>
+
+           
+            <div class="flex flex-col justify-center items-center">
+              <h2 class="font-bold text-3xl">Your inspiration:</h2>
+              <div id="inspiration" class="bg-blue-500">
+
+              </div>
+            </div>   
+            
+        </div>
+
+
+    </body>
+</html>
