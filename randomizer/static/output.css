@@ -468,6 +468,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.button-main {
+  margin-top: 0.5rem;
+  width: 15rem;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.button-main:hover {
+  margin-top: 0px;
+  width: 16rem;
+}
+
 .static {
   position: static;
 }
@@ -496,24 +510,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 5rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .flex {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-full {
   height: 100%;
-}
-
-.h-60 {
-  height: 15rem;
 }
 
 .h-28 {
@@ -522,14 +524,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.cursor-pointer {
-  cursor: pointer;
 }
 
 .flex-row {
@@ -562,23 +556,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(252 211 77 / var(--tw-bg-opacity));
 }
 
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
-
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .pb-10 {
@@ -599,14 +579,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -682,19 +662,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 1;
 }
 
-.hover\:mt-0:hover {
-  margin-top: 0px;
-}
-
-.hover\:h-64:hover {
-  height: 16rem;
-}
-
-.hover\:w-64:hover {
-  width: 16rem;
-}
-
 .hover\:opacity-100:hover {
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 

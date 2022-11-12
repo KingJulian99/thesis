@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .button-main {
+        @apply cursor-pointer mt-2 hover:mt-0 w-60 hover:w-64 transition-all duration-500;
+    }
+}
+
 #curve {
     display: none;
 }

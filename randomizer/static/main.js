@@ -4,15 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     addEventListeners();
 })
 
-function addEventListeners() {
-    buttons = document.getElementsByClassName("choice_button");
-    console.log(buttons);
-
-    for(let button in buttons) {
-        console.log(button);
-    }
-}
-
-function showInspo(element) {
-    alert(element.id);
+function showInspo(inspo) {
+    // Grab from API
+    fetch(`/api/${inspo}`)
+    .then(response => response.json())
+    .then(data => console.log(data))
 }

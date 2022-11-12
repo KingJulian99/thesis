@@ -10,3 +10,9 @@ class Category(models.Model):
 class Inspo(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     UTL = models.CharField(max_length=512)
+
+    def serialize(self):
+        return {
+            'category' : self.category.name,
+            'content' : self.UTL
+        }
