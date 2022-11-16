@@ -526,6 +526,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.w-8\/12 {
+  width: 66.666667%;
+}
+
 .flex-row {
   flex-direction: row;
 }

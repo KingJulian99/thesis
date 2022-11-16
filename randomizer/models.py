@@ -16,3 +16,7 @@ class Inspo(models.Model):
             'category' : self.category.name,
             'content' : self.UTL
         }
+
+    def __str__(self):
+        return self.UTL
+
