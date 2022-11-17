@@ -12,6 +12,6 @@ def API(request, inspo):
     specific_category = Category.objects.get(name=inspo)
     #print('category: ' + str(specific_category))
     random_id = random.randint(0, Inspo.objects.filter(category=specific_category).count() - 1)
-    #print('random id: ' + str(random_id))
+    print('random id: ' + str(random_id))
     #print('queryset: ' + str(Inspo.objects.filter(category=specific_category).values()))
     return JsonResponse(Inspo.objects.filter(category=specific_category)[random_id].serialize(), safe=False)
