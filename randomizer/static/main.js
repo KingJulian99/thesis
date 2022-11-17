@@ -11,8 +11,9 @@ function showInspo(inspo) {
     fetch(`/api/${inspo}`)
     .then(response => response.json())
     .then(data => {
+
         console.log(data);
-        inspo_div = document.getElementById("inspiration");
+    
         if(inspo == "Music") {
             video = document.createElement("a");
             video.innerHTML = "Click me!" + "<br />" +  "(Don't worry, its safe)";
@@ -27,8 +28,16 @@ function showInspo(inspo) {
             video.style.fontWeight = "bold";
             video.style.background = "lightblue";
             video.style.textAlign = "center"; 
+            video.classList.add("fade_in")
             video.href = data.content;
             inspo_div.appendChild(video);
+        }
+
+        if(inspo == "Objects") {
+            image = document.createElement("img");
+            image.src = data.content
+            image.classList.add("fade_in");
+            inspo_div.appendChild(image);
         }
     })
 }
