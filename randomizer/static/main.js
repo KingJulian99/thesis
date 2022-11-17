@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function showInspo(inspo) {
+    // Remove everything already in inspo
+    inspo_div = document.getElementById("inspiration");
+    inspo_div.innerHTML = "";
+
     // Grab from API
     fetch(`/api/${inspo}`)
     .then(response => response.json())
@@ -11,7 +15,7 @@ function showInspo(inspo) {
         inspo_div = document.getElementById("inspiration");
         if(inspo == "Music") {
             video = document.createElement("a");
-            video.innerHTML = "Click me!";
+            video.innerHTML = "Click me!" + "<br />" +  "(Don't worry, its safe)";
             video.target = "_blank";
             video.style.paddingLeft = "4rem";
             video.style.paddingRight = "4rem";
@@ -22,6 +26,7 @@ function showInspo(inspo) {
             video.style.borderRadius = "2rem";
             video.style.fontWeight = "bold";
             video.style.background = "lightblue";
+            video.style.textAlign = "center"; 
             video.href = data.content;
             inspo_div.appendChild(video);
         }

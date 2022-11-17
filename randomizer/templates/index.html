@@ -8,7 +8,11 @@
     </head>
     <body class="bg-amber-100">
 
-        <div class="absolute w-full">
+      <div class="md:h-16 h-8 flex flex-col justify-center">
+
+        <div id="curved_title">
+
+          <div class="absolute w-full">
 
             <svg viewBox="0 25 500 500">
                 <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"/>
@@ -18,28 +22,33 @@
                   </textPath>
                 </text>
               </svg>
+  
+          </div>
+  
+          <div class="absolute w-full">
+    
+              <svg viewBox="0 0 500 500">
+                  <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"/>
+                  <text class="text-lg" text-anchor="middle">
+                    <textPath startOffset="50%"; class="curved_title" xlink:href="#curve">
+                      Randomizer
+                    </textPath>
+                  </text>
+                </svg>
+    
+          </div>
 
         </div>
+        
+      </div>
 
-        <div class="absolute w-full">
-
-            <svg viewBox="0 0 500 500">
-                <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"/>
-                <text class="text-lg" text-anchor="middle">
-                  <textPath startOffset="50%"; class="curved_title" xlink:href="#curve">
-                    Randomizer
-                  </textPath>
-                </text>
-              </svg>
-
-        </div>
+        
 
         <div>
             <br>
         </div>
 
         <div class="absolute mt-[140px] pb-10 w-full h-full">
-            <h3 class="text-center">By Veronique Folscher</h3>
 
             <!--Buttons-->
             <div class="flex flex-row justify-center mt-20 gap-5">

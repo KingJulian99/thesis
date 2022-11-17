@@ -547,6 +547,10 @@ video {
   z-index: 10;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .mt-\[140px\] {
   margin-top: 140px;
 }
@@ -565,6 +569,26 @@ video {
 
 .h-28 {
   height: 7rem;
+}
+
+.h-\[140px\] {
+  height: 140px;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .w-full {
@@ -608,6 +632,10 @@ video {
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.p-32 {
+  padding: 8rem;
 }
 
 .pb-10 {
@@ -711,6 +739,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:h-16 {
+    height: 4rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
