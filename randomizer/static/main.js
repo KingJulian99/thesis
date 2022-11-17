@@ -31,13 +31,12 @@ function showInspo(inspo) {
             video.classList.add("fade_in")
             video.href = data.content;
             inspo_div.appendChild(video);
-        }
-
-        if(inspo == "Objects") {
+        } else {
             image = document.createElement("img");
             image.src = data.content
             image.classList.add("fade_in");
             inspo_div.appendChild(image);
         }
+
     })
 }
